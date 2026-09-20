@@ -1,0 +1,18 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 单测（离线，使用合成 K 线）
+        run: python tests/test_monitor.py
+      - name: CLI 冒烟（离线）
+        run: python -m monitor.cli --fixture tests/fixtures/sample_klines.json --no-write

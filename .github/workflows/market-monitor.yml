@@ -1,0 +1,65 @@
+name: 盘后监控（MA20/MA40 + 量能）
+
+on:
+  schedule:
+    # 07:35 UTC = 北京时间 15:35，收盘后跑
+    - cron: "35 7 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: market-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 跑监控
+        id: run
+        run: |
+          set +e
+          python -m monitor.cli --config config.json --fail-on-alert | tee run.log
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: 提交日报快照
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          git diff --staged --quiet || git commit -m "chore: 盘后监控快照 $(date -u +%F)"
+          git push
+
+      - name: 触发预警时开 issue
+        if: steps.run.outputs.exit_code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "自动盘后监控触发了 ALERT 级别信号。"
+            echo
+            echo '```'
+            cat run.log
+            echo '```'
+          } > issue.md
+          gh issue create \
+            --title "🔴 均线/量能预警 $(date -u +%F)" \
+            --body-file issue.md \
+            --label "market-alert" || \
+          gh issue create \
+            --title "🔴 均线/量能预警 $(date -u +%F)" \
+            --body-file issue.md
+
+      - name: 数据源不可用时提示
+        if: steps.run.outputs.exit_code == '1'
+        run: |
+          echo "::warning::所有行情数据源均抓取失败，请检查 GitHub runner 出口是否被数据源限制。"

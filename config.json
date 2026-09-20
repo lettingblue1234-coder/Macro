@@ -1,0 +1,53 @@
+{
+  "ma_windows": [20, 40],
+  "hold_days": 3,
+  "buffer_pct": 0.5,
+  "near_pct": 1.5,
+  "volume_ratio_window": 5,
+  "volume_surge_ratio": 1.2,
+  "volume_shrink_ratio": 0.8,
+  "slope_lookback": 5,
+  "history_days": 260,
+  "sources": ["eastmoney", "tencent"],
+  "watchlist": [
+    {
+      "name": "创业板指",
+      "code": "399006",
+      "market": "sz",
+      "anchor": null,
+      "anchor_note": "填上周三（启动日）的最低价或收盘价"
+    },
+    {
+      "name": "科创50",
+      "code": "000688",
+      "market": "sh",
+      "anchor": null,
+      "anchor_note": "填上周三（启动日）的最低价或收盘价"
+    },
+    {
+      "name": "创业板50",
+      "code": "399673",
+      "market": "sz",
+      "anchor": null
+    },
+    {
+      "name": "科创50ETF",
+      "code": "588000",
+      "market": "sh",
+      "anchor": null
+    },
+    {
+      "name": "创业板ETF",
+      "code": "159915",
+      "market": "sz",
+      "anchor": null
+    },
+    {
+      "name": "上证指数",
+      "code": "000001",
+      "market": "sh",
+      "anchor": null,
+      "levels": [{ "price": 3800, "note": "加仓计划位" }]
+    }
+  ]
+}
