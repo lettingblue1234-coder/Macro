@@ -1,0 +1,318 @@
+{
+  "date": "2026-09-21",
+  "changes": [],
+  "reports": [
+    {
+      "name": "创业板指",
+      "code": "399006",
+      "market": "sz",
+      "date": "2026-09-21",
+      "close": 3399.59,
+      "chg_pct": 0.7978818031950944,
+      "volume": 182286568.0,
+      "amount": 525256185679.84,
+      "vol_ratio": 1.1904243049501182,
+      "vol_state": "平量",
+      "vol_ma5": 159964507.0,
+      "vol_ma10": 161152195.9,
+      "vol_ma20": 172742339.1,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 3357.1485000000002,
+          "gap_pct": 1.2642127686636413,
+          "slope_pct": -1.499506125641121,
+          "streak": 2,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 3428.392,
+          "gap_pct": -0.8401022986869553,
+          "slope_pct": -0.9175279697879257,
+          "streak": -58,
+          "status": "跌破"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "创业板指 站上 MA20(3357.15) 2 日，未满 3 日确认"
+        },
+        {
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "创业板指 持续失守 MA40(3428.39)，已 58 日，偏离 -0.84%"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "WATCH"
+    },
+    {
+      "name": "科创50",
+      "code": "000688",
+      "market": "sh",
+      "date": "2026-09-21",
+      "close": 1657.48,
+      "chg_pct": 0.29347161796650845,
+      "volume": 7600285.0,
+      "amount": 89250525446.1,
+      "vol_ratio": 1.0537087952575566,
+      "vol_state": "平量",
+      "vol_ma5": 7584310.2,
+      "vol_ma10": 7200389.7,
+      "vol_ma20": 7527927.6,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 1612.6155,
+          "gap_pct": 2.7820952979802005,
+          "slope_pct": -0.868940606153034,
+          "streak": 2,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 1648.32325,
+          "gap_pct": 0.5555190706677287,
+          "slope_pct": -1.5874420827607931,
+          "streak": 2,
+          "status": "上方震荡"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "科创50 站上 MA20(1612.62) 2 日，未满 3 日确认"
+        },
+        {
+          "level": "INFO",
+          "code": "MA40_ABOVE",
+          "text": "科创50 站上 MA40(1648.32) 2 日，未满 3 日确认"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "INFO"
+    },
+    {
+      "name": "创业板50",
+      "code": "399673",
+      "market": "sz",
+      "date": "2026-09-21",
+      "close": 3538.47,
+      "chg_pct": 0.8731869184455293,
+      "volume": 17046385.0,
+      "amount": 166229280053.23,
+      "vol_ratio": 1.177898238634831,
+      "vol_state": "平量",
+      "vol_ma5": 15438861.8,
+      "vol_ma10": 14972877.5,
+      "vol_ma20": 17166524.9,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 3505.7245000000003,
+          "gap_pct": 0.9340579957152805,
+          "slope_pct": -1.7220871316461166,
+          "streak": 1,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 3592.4230000000002,
+          "gap_pct": -1.5018554329487488,
+          "slope_pct": -1.2096542442534504,
+          "streak": -58,
+          "status": "跌破"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "创业板50 站上 MA20(3505.72) 1 日，未满 3 日确认"
+        },
+        {
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "创业板50 持续失守 MA40(3592.42)，已 58 日，偏离 -1.50%"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "WATCH"
+    },
+    {
+      "name": "科创50ETF",
+      "code": "588000",
+      "market": "sh",
+      "date": "2026-09-21",
+      "close": 1.749,
+      "chg_pct": 0.2866972477064286,
+      "volume": 31005538.0,
+      "amount": 5427327779.0,
+      "vol_ratio": 0.8058513173068779,
+      "vol_state": "平量",
+      "vol_ma5": 38897577.4,
+      "vol_ma10": 34828847.4,
+      "vol_ma20": 33588513.35,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 1.7028500000000002,
+          "gap_pct": 2.710162374842171,
+          "slope_pct": -0.8558702803411927,
+          "streak": 2,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 1.7398499999999995,
+          "gap_pct": 0.5259074058108837,
+          "slope_pct": -1.5838447832112728,
+          "streak": 2,
+          "status": "上方震荡"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "科创50ETF 站上 MA20(1.70) 2 日，未满 3 日确认"
+        },
+        {
+          "level": "INFO",
+          "code": "MA40_ABOVE",
+          "text": "科创50ETF 站上 MA40(1.74) 2 日，未满 3 日确认"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "INFO"
+    },
+    {
+      "name": "创业板ETF",
+      "code": "159915",
+      "market": "sz",
+      "date": "2026-09-21",
+      "close": 3.418,
+      "chg_pct": 0.7962253022707206,
+      "volume": 15130546.0,
+      "amount": 5181806533.315,
+      "vol_ratio": 0.9477485432853838,
+      "vol_state": "平量",
+      "vol_ma5": 16620339.8,
+      "vol_ma10": 15214014.2,
+      "vol_ma20": 15834318.0,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 3.3759,
+          "gap_pct": 1.247074854112978,
+          "slope_pct": -1.4939744973884403,
+          "streak": 2,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 3.44845,
+          "gap_pct": -0.8830054082268742,
+          "slope_pct": -0.9236913175889502,
+          "streak": -58,
+          "status": "跌破"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "创业板ETF 站上 MA20(3.38) 2 日，未满 3 日确认"
+        },
+        {
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "创业板ETF 持续失守 MA40(3.45)，已 58 日，偏离 -0.88%"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "WATCH"
+    },
+    {
+      "name": "上证指数",
+      "code": "000001",
+      "market": "sh",
+      "date": "2026-09-21",
+      "close": 3949.91,
+      "chg_pct": 0.972424952771947,
+      "volume": 502354877.0,
+      "amount": 946819124308.7,
+      "vol_ratio": 1.0932542711417093,
+      "vol_state": "平量",
+      "vol_ma5": 468197344.4,
+      "vol_ma10": 491117089.6,
+      "vol_ma20": 503526015.8,
+      "pv_pattern": "平量上涨",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 3925.8180000000007,
+          "gap_pct": 0.6136810213820199,
+          "slope_pct": -0.10482354999282653,
+          "streak": 1,
+          "status": "上方震荡"
+        },
+        "40": {
+          "window": 40,
+          "value": 3910.141249999999,
+          "gap_pct": 1.017066838697979,
+          "slope_pct": 0.13613284383642119,
+          "streak": 2,
+          "status": "上方震荡"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [
+        {
+          "price": 3800,
+          "note": "加仓计划位",
+          "gap_pct": 3.9449999999999963
+        }
+      ],
+      "signals": [
+        {
+          "level": "INFO",
+          "code": "MA20_ABOVE",
+          "text": "上证指数 站上 MA20(3925.82) 1 日，未满 3 日确认"
+        },
+        {
+          "level": "INFO",
+          "code": "MA40_ABOVE",
+          "text": "上证指数 站上 MA40(3910.14) 2 日，未满 3 日确认"
+        }
+      ],
+      "source": "eastmoney",
+      "worst_level": "INFO"
+    }
+  ]
+}
