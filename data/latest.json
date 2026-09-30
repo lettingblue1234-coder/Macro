@@ -1,48 +1,93 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "changes": [
-    "创业板指 MA20：压制 → 跌破",
-    "创业板指 量能：平量 → 缩量",
-    "科创50 MA40：压制 → 跌破",
-    "创业板50 MA20：压制 → 跌破",
-    "科创50ETF MA40：压制 → 跌破",
-    "科创50ETF 量能：放量 → 平量",
-    "创业板ETF MA20：压制 → 跌破",
-    "创业板ETF 量能：放量 → 平量",
-    "上证指数 MA20：压制 → 跌破",
-    "上证指数 MA40：压制 → 跌破"
+    "创业板指 量能：缩量 → 平量",
+    "科创50 MA20：压制 → 跌破",
+    "科创50ETF MA20：压制 → 跌破",
+    "创业板ETF 量能：平量 → 缩量"
   ],
   "reports": [
     {
       "name": "创业板指",
       "code": "399006",
       "market": "sz",
-      "date": "2026-09-29",
-      "close": 3142.56,
-      "chg_pct": 0.08726614901490473,
-      "volume": 134067120.0,
-      "amount": 359056474180.71,
-      "vol_ratio": 0.7967717649485615,
-      "vol_state": "缩量",
-      "vol_ma5": 158619000.6,
-      "vol_ma10": 159291753.8,
-      "vol_ma20": 165918710.25,
-      "pv_pattern": "缩量反弹",
+      "date": "2026-09-30",
+      "close": 3135.28,
+      "chg_pct": -0.23165826587240165,
+      "volume": 133666684.0,
+      "amount": 0.0,
+      "vol_ratio": 0.8724633212725064,
+      "vol_state": "平量",
+      "vol_ma5": 142816587.0,
+      "vol_ma10": 152716052.6,
+      "vol_ma20": 156067038.8,
+      "pv_pattern": "平量下跌",
       "mas": {
         "20": {
           "window": 20,
-          "value": 3317.2504999999996,
-          "gap_pct": -5.266123254785845,
-          "slope_pct": -1.1884490662239275,
+          "value": 3304.343,
+          "gap_pct": -5.116387735776814,
+          "slope_pct": -1.576459914293418,
+          "streak": -4,
+          "status": "跌破"
+        },
+        "40": {
+          "window": 40,
+          "value": 3413.3999999999987,
+          "gap_pct": -8.147887736567604,
+          "slope_pct": -0.4901880042778522,
+          "streak": -64,
+          "status": "跌破"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "WATCH",
+          "code": "MA20_STILL_LOST",
+          "text": "创业板指 持续失守 MA20(3304.34)，已 4 日，偏离 -5.12%"
+        },
+        {
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "创业板指 持续失守 MA40(3413.40)，已 64 日，偏离 -8.15%"
+        }
+      ],
+      "source": "tencent",
+      "worst_level": "WATCH"
+    },
+    {
+      "name": "科创50",
+      "code": "000688",
+      "market": "sh",
+      "date": "2026-09-30",
+      "close": 1530.01,
+      "chg_pct": -2.506149081779597,
+      "volume": 7317081.0,
+      "amount": 0.0,
+      "vol_ratio": 1.0143735009147976,
+      "vol_state": "平量",
+      "vol_ma5": 6907265.6,
+      "vol_ma10": 7528521.5,
+      "vol_ma20": 7199915.9,
+      "pv_pattern": "平量下跌",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 1596.5619999999997,
+          "gap_pct": -4.16845697191839,
+          "slope_pct": -1.1807100352925608,
           "streak": -3,
           "status": "跌破"
         },
         "40": {
           "window": 40,
-          "value": 3422.2422499999984,
-          "gap_pct": -8.172485451607017,
-          "slope_pct": -0.17937709573467803,
-          "streak": -63,
+          "value": 1644.2544999999998,
+          "gap_pct": -6.948103228545204,
+          "slope_pct": -0.20379491594582294,
+          "streak": -4,
           "status": "跌破"
         }
       },
@@ -53,93 +98,98 @@
         {
           "level": "ALERT",
           "code": "MA20_LOST",
-          "text": "创业板指 今日确认失守 MA20(3317.25)，已 3 日，偏离 -5.27%"
+          "text": "科创50 今日确认失守 MA20(1596.56)，已 3 日，偏离 -4.17%"
         },
         {
           "level": "WATCH",
           "code": "MA40_STILL_LOST",
-          "text": "创业板指 持续失守 MA40(3422.24)，已 63 日，偏离 -8.17%"
+          "text": "科创50 持续失守 MA40(1644.25)，已 4 日，偏离 -6.95%"
         }
       ],
-      "source": "eastmoney",
-      "worst_level": "ALERT"
-    },
-    {
-      "name": "科创50",
-      "code": "000688",
-      "market": "sh",
-      "date": "2026-09-29",
-      "close": 1569.34,
-      "chg_pct": 0.8586228614763621,
-      "volume": 7516951.0,
-      "amount": 64529947381.6,
-      "vol_ratio": 1.0396794441433868,
-      "vol_state": "平量",
-      "vol_ma5": 7213399.2,
-      "vol_ma10": 7398854.7,
-      "vol_ma20": 7210736.95,
-      "pv_pattern": "平量上涨",
-      "mas": {
-        "20": {
-          "window": 20,
-          "value": 1602.4379999999996,
-          "gap_pct": -2.065477728311469,
-          "slope_pct": -0.6311175850660287,
-          "streak": -2,
-          "status": "压制"
-        },
-        "40": {
-          "window": 40,
-          "value": 1646.41325,
-          "gap_pct": -4.68128217505539,
-          "slope_pct": -0.11587532967217071,
-          "streak": -3,
-          "status": "跌破"
-        }
-      },
-      "anchor": null,
-      "anchor_gap_pct": null,
-      "levels": [],
-      "signals": [
-        {
-          "level": "ALERT",
-          "code": "MA40_LOST",
-          "text": "科创50 今日确认失守 MA40(1646.41)，已 3 日，偏离 -4.68%"
-        }
-      ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "ALERT"
     },
     {
       "name": "创业板50",
       "code": "399673",
       "market": "sz",
-      "date": "2026-09-29",
-      "close": 3247.51,
-      "chg_pct": 0.0455941565543146,
-      "volume": 13472679.0,
-      "amount": 101158454323.8,
-      "vol_ratio": 0.828269821953341,
+      "date": "2026-09-30",
+      "close": 3240.53,
+      "chg_pct": -0.21493390320584133,
+      "volume": 13858486.0,
+      "amount": 0.0,
+      "vol_ratio": 0.8911459135248648,
       "vol_state": "平量",
-      "vol_ma5": 15551309.6,
-      "vol_ma10": 15495085.7,
-      "vol_ma20": 16106337.95,
-      "pv_pattern": "平量上涨",
+      "vol_ma5": 13894381.2,
+      "vol_ma10": 15637536.3,
+      "vol_ma20": 15710946.75,
+      "pv_pattern": "平量下跌",
       "mas": {
         "20": {
           "window": 20,
-          "value": 3456.4404999999992,
-          "gap_pct": -6.044672257485672,
-          "slope_pct": -1.4058149749074587,
+          "value": 3441.1865,
+          "gap_pct": -5.831026595042134,
+          "slope_pct": -1.8135265722537326,
+          "streak": -4,
+          "status": "跌破"
+        },
+        "40": {
+          "window": 40,
+          "value": 3567.1797500000007,
+          "gap_pct": -9.157086911586118,
+          "slope_pct": -0.7235861720796536,
+          "streak": -64,
+          "status": "跌破"
+        }
+      },
+      "anchor": null,
+      "anchor_gap_pct": null,
+      "levels": [],
+      "signals": [
+        {
+          "level": "WATCH",
+          "code": "MA20_STILL_LOST",
+          "text": "创业板50 持续失守 MA20(3441.19)，已 4 日，偏离 -5.83%"
+        },
+        {
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "创业板50 持续失守 MA40(3567.18)，已 64 日，偏离 -9.16%"
+        }
+      ],
+      "source": "tencent",
+      "worst_level": "WATCH"
+    },
+    {
+      "name": "科创50ETF",
+      "code": "588000",
+      "market": "sh",
+      "date": "2026-09-30",
+      "close": 1.62,
+      "chg_pct": -2.2329511164755536,
+      "volume": 42024446.0,
+      "amount": 0.0,
+      "vol_ratio": 1.1495123473203865,
+      "vol_state": "平量",
+      "vol_ma5": 36064245.6,
+      "vol_ma10": 38246365.9,
+      "vol_ma20": 35549540.35,
+      "pv_pattern": "平量下跌",
+      "mas": {
+        "20": {
+          "window": 20,
+          "value": 1.6863999999999997,
+          "gap_pct": -3.9373814041745483,
+          "slope_pct": -1.1546802649317183,
           "streak": -3,
           "status": "跌破"
         },
         "40": {
           "window": 40,
-          "value": 3578.8035000000004,
-          "gap_pct": -9.257102268956654,
-          "slope_pct": -0.3791173812215512,
-          "streak": -63,
+          "value": 1.736,
+          "gap_pct": -6.682027649769578,
+          "slope_pct": -0.1825578219558084,
+          "streak": -4,
           "status": "跌破"
         }
       },
@@ -150,93 +200,47 @@
         {
           "level": "ALERT",
           "code": "MA20_LOST",
-          "text": "创业板50 今日确认失守 MA20(3456.44)，已 3 日，偏离 -6.04%"
+          "text": "科创50ETF 今日确认失守 MA20(1.69)，已 3 日，偏离 -3.94%"
         },
         {
           "level": "WATCH",
           "code": "MA40_STILL_LOST",
-          "text": "创业板50 持续失守 MA40(3578.80)，已 63 日，偏离 -9.26%"
+          "text": "科创50ETF 持续失守 MA40(1.74)，已 4 日，偏离 -6.68%"
         }
       ],
-      "source": "eastmoney",
-      "worst_level": "ALERT"
-    },
-    {
-      "name": "科创50ETF",
-      "code": "588000",
-      "market": "sh",
-      "date": "2026-09-29",
-      "close": 1.657,
-      "chg_pct": 0.8520998174071827,
-      "volume": 36478079.0,
-      "amount": 6021782656.0,
-      "vol_ratio": 1.0285948698136929,
-      "vol_state": "平量",
-      "vol_ma5": 36558499.0,
-      "vol_ma10": 37728038.2,
-      "vol_ma20": 34696405.2,
-      "pv_pattern": "平量上涨",
-      "mas": {
-        "20": {
-          "window": 20,
-          "value": 1.6924,
-          "gap_pct": -2.0917040888678726,
-          "slope_pct": -0.6136770707930602,
-          "streak": -2,
-          "status": "压制"
-        },
-        "40": {
-          "window": 40,
-          "value": 1.7381499999999996,
-          "gap_pct": -4.668757011765361,
-          "slope_pct": -0.09770957266429947,
-          "streak": -3,
-          "status": "跌破"
-        }
-      },
-      "anchor": null,
-      "anchor_gap_pct": null,
-      "levels": [],
-      "signals": [
-        {
-          "level": "ALERT",
-          "code": "MA40_LOST",
-          "text": "科创50ETF 今日确认失守 MA40(1.74)，已 3 日，偏离 -4.67%"
-        }
-      ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "ALERT"
     },
     {
       "name": "创业板ETF",
       "code": "159915",
       "market": "sz",
-      "date": "2026-09-29",
-      "close": 3.162,
-      "chg_pct": 0.0949667616334319,
-      "volume": 14794904.0,
-      "amount": 4678500475.885,
-      "vol_ratio": 0.8832263441496737,
-      "vol_state": "平量",
-      "vol_ma5": 16683848.4,
-      "vol_ma10": 16652094.1,
-      "vol_ma20": 15956778.05,
-      "pv_pattern": "平量上涨",
+      "date": "2026-09-30",
+      "close": 3.15,
+      "chg_pct": -0.37950664136622425,
+      "volume": 13081793.0,
+      "amount": 0.0,
+      "vol_ratio": 0.7840992489478626,
+      "vol_state": "缩量",
+      "vol_ma5": 15867803.4,
+      "vol_ma10": 16433321.9,
+      "vol_ma20": 16006436.4,
+      "pv_pattern": "缩量回调",
       "mas": {
         "20": {
           "window": 20,
-          "value": 3.3363,
-          "gap_pct": -5.2243503282078985,
-          "slope_pct": -1.1730205278592132,
-          "streak": -3,
+          "value": 3.3232,
+          "gap_pct": -5.211844005777564,
+          "slope_pct": -1.5625231416341951,
+          "streak": -4,
           "status": "跌破"
         },
         "40": {
           "window": 40,
-          "value": 3.441750000000001,
-          "gap_pct": -8.128132490738757,
-          "slope_pct": -0.19429018834546072,
-          "streak": -63,
+          "value": 3.432650000000001,
+          "gap_pct": -8.234163110133602,
+          "slope_pct": -0.5050614841706152,
+          "streak": -64,
           "status": "跌破"
         }
       },
@@ -245,49 +249,49 @@
       "levels": [],
       "signals": [
         {
-          "level": "ALERT",
-          "code": "MA20_LOST",
-          "text": "创业板ETF 今日确认失守 MA20(3.34)，已 3 日，偏离 -5.22%"
+          "level": "WATCH",
+          "code": "MA20_STILL_LOST",
+          "text": "创业板ETF 持续失守 MA20(3.32)，已 4 日，偏离 -5.21%"
         },
         {
           "level": "WATCH",
           "code": "MA40_STILL_LOST",
-          "text": "创业板ETF 持续失守 MA40(3.44)，已 63 日，偏离 -8.13%"
+          "text": "创业板ETF 持续失守 MA40(3.43)，已 64 日，偏离 -8.23%"
         }
       ],
-      "source": "eastmoney",
-      "worst_level": "ALERT"
+      "source": "tencent",
+      "worst_level": "WATCH"
     },
     {
       "name": "上证指数",
       "code": "000001",
       "market": "sh",
-      "date": "2026-09-29",
-      "close": 3830.45,
-      "chg_pct": 0.17862653715588703,
-      "volume": 399473391.0,
+      "date": "2026-09-30",
+      "close": 3842.19,
+      "chg_pct": 0.30649140440418843,
+      "volume": 414560247.0,
       "amount": 0.0,
-      "vol_ratio": 0.8440892611464222,
+      "vol_ratio": 0.9157841601757498,
       "vol_state": "平量",
-      "vol_ma5": 452683356.0,
-      "vol_ma10": 460440350.2,
-      "vol_ma20": 488812550.55,
+      "vol_ma5": 434365731.6,
+      "vol_ma10": 457805598.3,
+      "vol_ma20": 480863615.45,
       "pv_pattern": "平量上涨",
       "mas": {
         "20": {
           "window": 20,
-          "value": 3912.5219999999995,
-          "gap_pct": -2.097675105724637,
-          "slope_pct": -0.3386810086458486,
-          "streak": -3,
+          "value": 3905.6369999999997,
+          "gap_pct": -1.6244981292424174,
+          "slope_pct": -0.5934278920399422,
+          "streak": -4,
           "status": "跌破"
         },
         "40": {
           "window": 40,
-          "value": 3918.7087500000002,
-          "gap_pct": -2.2522406136970607,
-          "slope_pct": 0.219109731649711,
-          "streak": -3,
+          "value": 3919.2064999999993,
+          "gap_pct": -1.96510441590662,
+          "slope_pct": 0.14295618363265836,
+          "streak": -4,
           "status": "跌破"
         }
       },
@@ -297,28 +301,28 @@
         {
           "price": 3800,
           "note": "加仓计划位",
-          "gap_pct": 0.8013157894736795
+          "gap_pct": 1.1102631578947384
         }
       ],
       "signals": [
         {
-          "level": "ALERT",
-          "code": "MA20_LOST",
-          "text": "上证指数 今日确认失守 MA20(3912.52)，已 3 日，偏离 -2.10%"
+          "level": "WATCH",
+          "code": "MA20_STILL_LOST",
+          "text": "上证指数 持续失守 MA20(3905.64)，已 4 日，偏离 -1.62%"
         },
         {
-          "level": "ALERT",
-          "code": "MA40_LOST",
-          "text": "上证指数 今日确认失守 MA40(3918.71)，已 3 日，偏离 -2.25%"
+          "level": "WATCH",
+          "code": "MA40_STILL_LOST",
+          "text": "上证指数 持续失守 MA40(3919.21)，已 4 日，偏离 -1.97%"
         },
         {
           "level": "INFO",
           "code": "LEVEL_NEAR",
-          "text": "上证指数 距 加仓计划位 3800 仅 +0.80%"
+          "text": "上证指数 距 加仓计划位 3800 仅 +1.11%"
         }
       ],
       "source": "tencent",
-      "worst_level": "ALERT"
+      "worst_level": "WATCH"
     }
   ]
 }
