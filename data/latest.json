@@ -265,7 +265,7 @@
       "close": 3842.19,
       "chg_pct": 0.30649140440418843,
       "volume": 414560247.0,
-      "amount": 0.0,
+      "amount": 679398992444.8,
       "vol_ratio": 0.9157841601757498,
       "vol_state": "平量",
       "vol_ma5": 434365731.6,
@@ -316,7 +316,7 @@
           "text": "上证指数 距 加仓计划位 3800 仅 +1.11%"
         }
       ],
-      "source": "tencent",
+      "source": "eastmoney",
       "worst_level": "WATCH"
     }
   ]
