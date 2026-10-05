@@ -9,13 +9,13 @@
       "date": "2026-09-30",
       "close": 3135.28,
       "chg_pct": -0.23165826587240165,
-      "volume": 139371557.0,
-      "amount": 368971648170.82,
-      "vol_ratio": 0.8786561286655844,
+      "volume": 133666684.0,
+      "amount": 0.0,
+      "vol_ratio": 0.8724633212725064,
       "vol_state": "平量",
-      "vol_ma5": 148135618.6,
-      "vol_ma10": 158608026.3,
-      "vol_ma20": 162792987.6,
+      "vol_ma5": 142816587.0,
+      "vol_ma10": 152716052.6,
+      "vol_ma20": 156067038.8,
       "pv_pattern": "平量下跌",
       "mas": {
         "20": {
@@ -50,7 +50,7 @@
           "text": "创业板指 持续失守 MA40(3413.40)，已 64 日，偏离 -8.15%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "WATCH"
     },
     {
@@ -61,7 +61,7 @@
       "close": 1530.01,
       "chg_pct": -2.506149081779597,
       "volume": 7317081.0,
-      "amount": 71878699989.0,
+      "amount": 0.0,
       "vol_ratio": 1.0143735009147976,
       "vol_state": "平量",
       "vol_ma5": 6907265.6,
@@ -101,7 +101,7 @@
           "text": "科创50 持续失守 MA40(1644.25)，已 4 日，偏离 -6.95%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "ALERT"
     },
     {
@@ -112,7 +112,7 @@
       "close": 3240.53,
       "chg_pct": -0.21493390320584133,
       "volume": 13858486.0,
-      "amount": 104354174505.8,
+      "amount": 0.0,
       "vol_ratio": 0.8911459135248648,
       "vol_state": "平量",
       "vol_ma5": 13894381.2,
@@ -152,7 +152,7 @@
           "text": "创业板50 持续失守 MA40(3567.18)，已 64 日，偏离 -9.16%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "WATCH"
     },
     {
@@ -163,7 +163,7 @@
       "close": 1.616,
       "chg_pct": -2.4743512371756142,
       "volume": 42024446.0,
-      "amount": 6849531379.0,
+      "amount": 0.0,
       "vol_ratio": 1.1495123473203865,
       "vol_state": "平量",
       "vol_ma5": 36064245.6,
@@ -203,7 +203,7 @@
           "text": "科创50ETF 持续失守 MA40(1.74)，已 4 日，偏离 -6.91%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "ALERT"
     },
     {
@@ -214,7 +214,7 @@
       "close": 3.154,
       "chg_pct": -0.2530044275774828,
       "volume": 13081793.0,
-      "amount": 4142874902.909,
+      "amount": 0.0,
       "vol_ratio": 0.7840992489478626,
       "vol_state": "缩量",
       "vol_ma5": 15867803.4,
@@ -254,7 +254,7 @@
           "text": "创业板ETF 持续失守 MA40(3.43)，已 64 日，偏离 -8.12%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "WATCH"
     },
     {
@@ -265,7 +265,7 @@
       "close": 3842.19,
       "chg_pct": 0.30649140440418843,
       "volume": 414560247.0,
-      "amount": 679398992444.8,
+      "amount": 0.0,
       "vol_ratio": 0.9157841601757498,
       "vol_state": "平量",
       "vol_ma5": 434365731.6,
@@ -316,7 +316,7 @@
           "text": "上证指数 距 加仓计划位 3800 仅 +1.11%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "WATCH"
     }
   ]
