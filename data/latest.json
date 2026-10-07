@@ -163,7 +163,7 @@
       "close": 1.616,
       "chg_pct": -2.4743512371756142,
       "volume": 42024446.0,
-      "amount": 0.0,
+      "amount": 6849531379.0,
       "vol_ratio": 1.1495123473203865,
       "vol_state": "平量",
       "vol_ma5": 36064245.6,
@@ -203,7 +203,7 @@
           "text": "科创50ETF 持续失守 MA40(1.74)，已 4 日，偏离 -6.91%"
         }
       ],
-      "source": "tencent",
+      "source": "eastmoney",
       "worst_level": "ALERT"
     },
     {
@@ -265,7 +265,7 @@
       "close": 3842.19,
       "chg_pct": 0.30649140440418843,
       "volume": 414560247.0,
-      "amount": 679398992444.8,
+      "amount": 0.0,
       "vol_ratio": 0.9157841601757498,
       "vol_state": "平量",
       "vol_ma5": 434365731.6,
@@ -316,7 +316,7 @@
           "text": "上证指数 距 加仓计划位 3800 仅 +1.11%"
         }
       ],
-      "source": "eastmoney",
+      "source": "tencent",
       "worst_level": "WATCH"
     }
   ]
